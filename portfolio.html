@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
@@ -11,14 +12,51 @@ font-family: 'Courier New';">
 <img src="imagenes/WhatsApp Image 2024-07-30 at 5.21.31 PM.jpeg " alt="foto de alex"
 style="width: 70px; height: min-content; border-radius: 50px;"> 
 <br>
-<h3>Alex Avila</h3>
+<h1>Alex Avila</h1>
 <p>Developer junior</p>
-<p><img src="imagenes/location-svgrepo-com.svg " alt="locacion" 
-style="width: min-content; height: 25px;"> Cartagena,Colombia</p>
 </div>
-<hr style="background-color: black; height: 2px; width: 450px;">
-</body>
+<hr style="background-color: black; height: 2px; width: 600px;">
+<br><br>
+<div class="contenedor">
+    <div class="flex">
+       <label>
+        <input type="checkbox" id="toggleInfo">
+        About
+    </label>
+    
+    <div class="info-bar" id="infoBar">
+        <p>esta es la informacion que se mostrara al darle click al checkbox</p>
+        <style>
+        .info-bar {
+            display: none;
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .info-bar.show {
+            display: block;
+        }
+    </style> 
+    </div>
 
+    </div>
+    
+</div>
+<script>
+        const checkbox = document.getElementById('toggleInfo');
+        const infoBar = document.getElementById('infoBar');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                infoBar.classList.add('show');
+            } else {
+                infoBar.classList.remove('show');
+            }
+        });
+    </script>
+</body>
 
 
 </html>
