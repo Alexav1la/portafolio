@@ -14,24 +14,26 @@ style="width: 70px; height: min-content; border-radius: 50px;">
 <br>
 <h1>Alex Avila</h1>
 <p>Developer junior</p>
+<img src="imagenes/location-svgrepo-com.svg" alt="locacion"
+style="width: 20px; height: auto;"> Cartagena,Colombia
 </div>
 <hr style="background-color: black; height: 2px; width: 600px;">
 <br><br>
 <div class="contenedor">
     <div class="flex">
-       <label>
-        <input type="checkbox" id="toggleInfo">
-        About
-    </label>
+        <label id="toggleInfo" style="cursor: pointer;">
+            <img src="imagenes/personal-svgrepo-com.svg" style="width: 20px; height: auto;" id="arrowIcon">         Acerca de mi
+          </label>
     
     <div class="info-bar" id="infoBar">
         <p>esta es la informacion que se mostrara al darle click al checkbox</p>
         <style>
         .info-bar {
-            display: none;
+           display: none;
             background-color: #f0f0f0;
-            padding: 15px;
+            padding: auto;
             margin-top: 10px;
+            
             border: 1px solid #ccc;
             border-radius: 4px;
         }
@@ -55,7 +57,19 @@ style="width: 70px; height: min-content; border-radius: 50px;">
                 infoBar.classList.remove('show');
             }
         });
-    </script>
+    </script><script>
+  document.getElementById('toggleInfo').addEventListener('click', function() {
+    var infoBar = document.getElementById('infoBar');
+    var arrowIcon = document.getElementById('arrowIcon');
+    if (infoBar.classList.contains('show')) {
+      infoBar.classList.remove('show');
+      arrowIcon.src = 'imagenes/personal-svgrepo-com.svg';
+    } else {
+      infoBar.classList.add('show');
+      arrowIcon.src = 'imagenes/personal-svgrepo-com.svg';
+    }
+  });
+</script>
 </body>
 
 
