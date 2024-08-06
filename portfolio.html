@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
 </head>
 <body style=" text-align: center;
-font-family: 'Courier New';"> 
+font-family: cursive;"> 
 <div>
 <img src="imagenes/WhatsApp Image 2024-07-30 at 5.21.31 PM.jpeg " alt="foto de alex"
 style="width: 70px; height: min-content; border-radius: 50px;"> 
@@ -17,49 +17,25 @@ style="width: 70px; height: min-content; border-radius: 50px;">
 <img src="imagenes/location-svgrepo-com.svg" alt="locacion"
 style="width: 20px; height: auto;"> Cartagena,Colombia
 </div>
+<br>
 <hr style="background-color: black; height: 2px; width: 600px;">
-<br><br>
+<br>
 <div class="contenedor">
     <div class="flex">
         <label id="toggleInfo" style="cursor: pointer;">
-            <img src="imagenes/personal-svgrepo-com.svg" style="width: 20px; height: auto;" id="arrowIcon">         Acerca de mi
+            <img src="imagenes/personal-svgrepo-com.svg" style="width: 20px; height: auto;" id="arrowIcon"> Acerca de mi
           </label>
-    
     <div class="info-bar" id="infoBar">
-        <p>esta es la informacion que se mostrara al darle click al checkbox</p>
-        <style>
-        .info-bar {
-           display: none;
-            background-color: #f0f0f0;
-            padding: auto;
-            margin-top: 10px;
-            
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .info-bar.show {
-            display: block;
-        }
-    </style> 
+        <p> Estudiante de ingeniera en sistemas con conocimientos basicos en JAVA,HTML y CSS.
+          con grandes habilidades en trabajo en equipo y solucion de problemas,con experiencia e
+          proyectos propios.Busco oportunidades para aprovechar mis conocimientos y explotar mi talento
+           en un entorno donde tenga un impacto significativo en mi trabajo y mi crecimiento como profesional. </p>
     </div>
-
-    </div>
-    
+    </div>    
 </div>
 <script>
-        const checkbox = document.getElementById('toggleInfo');
-        const infoBar = document.getElementById('infoBar');
-
-        checkbox.addEventListener('change', () => {
-            if (checkbox.checked) {
-                infoBar.classList.add('show');
-            } else {
-                infoBar.classList.remove('show');
-            }
-        });
-    </script><script>
-  document.getElementById('toggleInfo').addEventListener('click', function() {
-    var infoBar = document.getElementById('infoBar');
+    document.getElementById('toggleInfo').addEventListener('click', function() {
+      var infoBar = document.getElementById('infoBar');
     var arrowIcon = document.getElementById('arrowIcon');
     if (infoBar.classList.contains('show')) {
       infoBar.classList.remove('show');

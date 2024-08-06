@@ -1,0 +1,18 @@
+
+    .info-bar {
+           display: none;
+            background-color: #ffffff;
+            padding: auto;
+            margin-top: 5px;
+            border: 1px solid #fff7f7;
+            border-radius: 5px;
+            border-color: black;
+            margin-left: 140px;
+            margin-right: 140px;
+            text-align: center;
+            }
+    .info-bar.show {
+            display: block;
+              }
+
+
