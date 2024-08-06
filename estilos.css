@@ -10,9 +10,13 @@
             margin-left: 140px;
             margin-right: 140px;
             text-align: center;
+           
             }
     .info-bar.show {
             display: block;
               }
-
+              
+.flex{
+        cursor: pointer;
+}
 
