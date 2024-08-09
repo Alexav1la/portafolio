@@ -1,5 +1,21 @@
+        .flex{
+                flex-direction: column;
+                display: flex;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                min-width: 10vh;
+                line-height:1.4;
+                box-sizing: border-box;
+                flex-grow: 1;
 
-    .info-bar {
+        }
+        
+        .contenedor{
+                overflow-y: scroll;
+        }
+
+
+
+   .info-bar {
            display: none;
             background-color: #ffffff;
             padding: auto;
@@ -15,8 +31,5 @@
     .info-bar.show {
             display: block;
               }
-              
-.flex{
-        cursor: pointer;
-}
+
 
