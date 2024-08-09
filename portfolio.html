@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portafolio</title>
 </head>
-<body style=" text-align: center;
-font-family: cursive;"> 
+<body class="flex"> 
 <div>
 <img src="imagenes/WhatsApp Image 2024-07-30 at 5.21.31 PM.jpeg " alt="foto de alex"
 style="width: 70px; height: min-content; border-radius: 50px;"> 
@@ -15,15 +14,15 @@ style="width: 70px; height: min-content; border-radius: 50px;">
 <h1>Alex Avila</h1>
 <p>Developer junior</p>
 <img src="imagenes/location-svgrepo-com.svg" alt="locacion"
-style="width: 20px; height: auto;"> Cartagena,Colombia
+style="width: 20px; height: auto;"> <i>Cartagena,Colombia</i>
 </div>
 <br>
 <hr style="background-color: black; height: 2px; width: 600px;">
 <br>
-<div class="contenedor">
-    <div class="flex">
-        <label id="toggleInfo" >
-            <img src="imagenes/personal-svgrepo-com.svg" style="width: 20px; height: auto;" id="arrowIcon"> Acerca de mi
+<div class="contenedor" id="contenedor">
+    <div >
+        <label id="toggleInfo" style="cursor: pointer;">
+            <img src="imagenes/personal-svgrepo-com.svg" style="width: 20px; height: auto;" id="arrowIcon"> <b>Acerca de mi</b>
           </label>
     <div class="info-bar" id="infoBar">
         <p> Estudiante de ingeniera en sistemas con conocimientos basicos en JAVA,HTML y CSS.
@@ -31,9 +30,14 @@ style="width: 20px; height: auto;"> Cartagena,Colombia
           proyectos propios.Busco oportunidades para aprovechar mis conocimientos y explotar mi talento
            en un entorno donde tenga un impacto significativo en mi trabajo y mi crecimiento como profesional. </p>
     </div>
-    </div> 
-    <div class="flex">
-      <label for="toggleInfo"></label>
+    </div>
+    <br> 
+    <div >
+      <label id="informacion" style="cursor: pointer;">
+        <img src="imagenes/working-home-distancing-new-normal-social-distancing-work-from-home-office-svgrepo-com.svg" alt="" 
+         style="width: 33px; height: auto;" id="Expelab"> <b>Experiencia laboral</b>
+      </label>
+      <p class="info-bar" id="expe">   aqui se pondra lo que ira en las experiencia laboral </p>
     </div>
 </div>
 <script>
@@ -46,6 +50,18 @@ style="width: 20px; height: auto;"> Cartagena,Colombia
     } else {
       infoBar.classList.add('show');
       arrowIcon.src = 'imagenes/personal-svgrepo-com.svg';
+    }
+  });
+
+document.getElementById('informacion').addEventListener('click', function() {
+      var expe = document.getElementById('expe');
+    var Expelab = document.getElementById('Expelab');
+    if (expe.classList.contains('show')) {
+      expe.classList.remove('show');
+      Expelab.src='imagenes/working-home-distancing-new-normal-social-distancing-work-from-home-office-svgrepo-com.svgimagenes/working-home-distancing-new-normal-social-distancing-work-from-home-office-svgrepo-com.svg';
+    } else {
+      expe.classList.add('show');
+      Expelab.src='imagenes/working-home-distnacing-new-normal-socila-distancing-wor-from-home-office-svgrepo-com.svgimagenes/working-home-distancing-new-normal-social-distancing-work-from-home-office-svgrepo-com.svg';
     }
   });
 </script>
